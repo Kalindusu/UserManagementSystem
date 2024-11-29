@@ -9,4 +9,7 @@ public class UsersManagementService {
 
     @Autowired
     private UsersRepo usersRepo;
+
+    @Autowired
+    private OurUserDetailsService ourUserDetailsService;
 }

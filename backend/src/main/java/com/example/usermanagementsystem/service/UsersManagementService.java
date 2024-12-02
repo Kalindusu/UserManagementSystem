@@ -11,5 +11,5 @@ public class UsersManagementService {
     private UsersRepo usersRepo;
 
     @Autowired
-    private OurUserDetailsService ourUserDetailsService;
+    private JWTUtils jwtUtils;
 }

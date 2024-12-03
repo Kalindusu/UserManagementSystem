@@ -30,14 +30,20 @@ public class UsersManagementService {
             ourUsers.setRole(registrationRequest.getRole());
             ourUsers.setName(registrationRequest.getName());
             ourUsers.setPassword(passwordEncoder.encode(registrationRequest.getPassword()));
+            OurUsers ourUsersResult=usersRepo.save(ourUsers);
+            if(ourUsersResult.getId()>0){
+                resp.setOurUsers((ourUsersResult));
+                resp.setMessage("user saved successfully");
+                resp.setStatusCode(200);
+            }
 
 
         } catch (Exception e) {
             resp.setStatusCode(500);
             resp.setError(e.getMessage());
         }
-
         return resp;
     }
+
 }
 

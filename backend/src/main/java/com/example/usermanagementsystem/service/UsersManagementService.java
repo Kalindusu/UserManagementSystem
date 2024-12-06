@@ -147,7 +147,7 @@ public class UsersManagementService {
             if (userOptional.isPresent()) {
                 usersRepo.deleteById(userId);
                 reqRes.setStatusCode(200);
-                reqRes.setMessage("User deleted successfully");
+                reqRes.setMessage("User successfully deleted ");
             } else {
                 reqRes.setStatusCode(404);
                 reqRes.setMessage("User not found for deletion");

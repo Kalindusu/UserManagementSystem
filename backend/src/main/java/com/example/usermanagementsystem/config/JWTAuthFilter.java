@@ -14,6 +14,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
+import com.example.usermanagementsystem.service.JWTUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.security.Security;
@@ -23,6 +26,7 @@ public class JWTAuthFilter extends OncePerRequestFilter {
 
     @Autowired
     private  JWTUtils jwtUtils;
+ 
 
     @Autowired
     private OurUserDetailsService ourUserDetailsService;

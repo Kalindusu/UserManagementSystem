@@ -3,7 +3,7 @@ package com.example.usermanagementsystem.service;
 import com.example.usermanagementsystem.dto.ReqRes;
 import com.example.usermanagementsystem.entity.OurUsers;
 import com.example.usermanagementsystem.repository.UsersRepo;
-import io.jsonwebtoken.Jwts;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

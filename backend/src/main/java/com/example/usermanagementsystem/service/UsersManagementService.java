@@ -179,7 +179,7 @@ public class UsersManagementService {
                 OurUsers savedUser = usersRepo.save(existingUser);
                 reqRes.setOurUsers(savedUser);
                 reqRes.setStatusCode(200);
-                reqRes.setMessage("User  successfully updated");
+                reqRes.setMessage("User  successfully updated details ");
             } else {
                 reqRes.setStatusCode(404);
                 reqRes.setMessage("User not found for update");
